@@ -67,8 +67,11 @@
 // console.log(typeof sum)
 
 
-const strNum = '3';
+// const strNum = '3';
 
-const number = Number(strNum)
+// const number = Number(strNum)
 
-console.log(number)
+// console.log(number)
+
+// stack and heap memory
+// Stack (Primitive) Heap (Non-Primitive)
