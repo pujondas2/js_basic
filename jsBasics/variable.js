@@ -75,3 +75,24 @@
 
 // stack and heap memory
 // Stack (Primitive) Heap (Non-Primitive)
+
+let myCompany = 'Data Verify'
+
+anotherCompany = myCompany
+
+anotherCompany = 'Data Temple'
+
+console.log(myCompany)
+console.log(anotherCompany)
+
+
+let operatorOne = {
+    id : 'OPRON203',
+    name : 'Pujon Das'
+}
+
+let operatorTwo = operatorOne
+
+operatorTwo.id = 'BG01017'
+
+console.log(operatorOne)
