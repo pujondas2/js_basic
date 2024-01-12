@@ -47,7 +47,7 @@ function addTwo(num) {
 
 
 
-addFive(5)
+addFive(8)
 const addFive = function(num) {
     console.log(num + 5);
 }
