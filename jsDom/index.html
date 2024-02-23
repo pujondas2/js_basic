@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h1 id="title" class="heading">This is a Website heading <span style="display: none;">with h1 tag</span></h1>
+    <p class="sub-head">Lorem ipsum dolor sit amet.</p>
+
+    <input type="password" name="" id="">
+
+
+    <ul>
+        <li class="list">HTML</li>
+        <li class="list">CSS</li>
+        <li class="list">Javascript</li>
+        <li class="list">React</li>
+        <li class="list">MongoDB</li>
+        <li class="list">Node js</li>
+    </ul> -->
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        // const parent = document.querySelector('.parent')
+        // // console.log(parent)
+        // const child = parent.children;
+        // console.log(child)
+        // for (let i = 0; i < child.length; i++) {
+        //     child[i].style.color = 'red';  
+        // }
+        // const firstChild = parent.firstElementChild;
+        // const lastChild = parent.lastElementChild;
+        // console.log(lastChild)
+        // const myChild = parent.children[0];
+        // console.log(myChild)
+        // const div = document.createElement('div')
+        // div.className = 'btn';
+        // div.id = 'button';
+        // div.setAttribute('title', 'button');
+        // const addText = document.createTextNode('click here');
+        // div.appendChild(addText);
+        // div.style.background = '#DD6031';
+        // div.style.padding = '8px 20px';
+        // div.style.color = '#fff';
+        // div.style.cursor = 'pointer';
+        // document.body.appendChild(div);
+
+        // add
+        // function addlang(langName) {
+        //     const lang = document.querySelector('.language');
+        //     const li = document.createElement('li');
+        //     li.innerHTML = `${langName}`;
+        //     lang.appendChild(li);
+        //     console.log(li)
+        // }
+        // addlang('Python');
+
+        function addOptiLang(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(`${langName}`))
+            document.querySelector('.language').appendChild(li);
+        }
+        addOptiLang('Typescript')
+        addOptiLang('Python')
+        addOptiLang('Tailwind CSS')
+
+        // edit
+        // const scpt = document.querySelector('li:nth-child(2)');
+        // scpt.innerHTML = 'dasscript'
+        // scpt.outerHTML = '<li>pujon</li>';
+
+        // const li = document.createElement('li');
+        // li.textContent = 'TypeReact';
+        // scpt.replaceWith(li);
+
+        // remove
+        const removeItem = document.querySelector('li:nth-child(3)')
+
+        removeItem.remove();
+    </script>
+    
+</body>
+</html>
